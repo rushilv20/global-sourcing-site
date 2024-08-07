@@ -1,0 +1,40 @@
+/* Home page styles */
+.home {
+    padding: 20px;
+}
+
+.carousel {
+    margin-bottom: 20px;
+}
+
+.vision-mission,
+.why-sourcing,
+.submit-product,
+.sections {
+    margin-bottom: 20px;
+}
+
+.submit-product h2 {
+    margin-bottom: 10px;
+}
+
+.submit-product button a {
+    text-decoration: none;
+    color: white;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section img {
+    width: 200px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.section h3 {
+    margin-bottom: 10px;
+}
