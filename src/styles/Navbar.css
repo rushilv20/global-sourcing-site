@@ -1,5 +1,6 @@
 .navbar {
-    background-color: #333;
+    background-color: #20b2aa;
+    /* Light Sea Green */
     overflow: hidden;
     position: sticky;
     top: 0;
@@ -12,6 +13,7 @@
 
 .navbar-logo a {
     color: white;
+    /* White for contrast */
     text-align: center;
     text-decoration: none;
     font-size: 24px;
@@ -31,12 +33,15 @@
 
 .navbar-links li a {
     color: white;
+    /* White for contrast */
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-.navbar-links li a:hover {
-    background-color: #ddd;
-    color: black;
+.navbar-links li a:hover,
+.navbar-links li a.active {
+    background-color: #008080;
+    /* Teal */
+    color: white;
 }

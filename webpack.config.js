@@ -6,6 +6,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: 'bundle.js',
+    publicPath: '/', // Ensure all paths are resolved from the root
   },
   module: {
     rules: [
@@ -34,5 +35,6 @@ module.exports = {
     compress: true,
     port: 9000,
     open: true,
+    historyApiFallback: true, // This line is crucial for client-side routing
   },
 };

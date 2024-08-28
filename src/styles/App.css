@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: #f0f0f0;
+    color: #333;
 }
 
 a {
@@ -12,7 +14,8 @@ a {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #008080;
+    /* Teal */
     color: white;
     border: none;
     padding: 10px 20px;
@@ -22,98 +25,70 @@ button {
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #005f5f;
+    /* Darker teal */
 }
 
 /* Navbar styles */
 .navbar {
-    background-color: #333;
+    background-color: #20b2aa;
+    /* Light Sea Green */
     overflow: hidden;
     position: sticky;
     top: 0;
     z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
 }
 
 .navbar-logo a {
-    float: left;
-    display: block;
     color: white;
+    /* White for contrast */
     text-align: center;
-    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 24px;
 }
 
 .navbar-links {
-    float: right;
     list-style-type: none;
     margin: 0;
     padding: 0;
+    display: flex;
 }
 
 .navbar-links li {
     display: inline;
+    margin-right: 20px;
 }
 
 .navbar-links li a {
-    display: block;
     color: white;
+    /* White for contrast */
     text-align: center;
     padding: 14px 16px;
+    text-decoration: none;
 }
 
-.navbar-links li a:hover {
-    background-color: #ddd;
-    color: black;
+.navbar-links li a:hover,
+.navbar-links li a.active {
+    background-color: #008080;
+    /* Teal */
+    color: white;
 }
 
 /* Footer styles */
 .footer {
-    background-color: #333;
+    background-color: #20b2aa;
+    /* Light Sea Green */
     color: white;
+    /* White for contrast */
     text-align: center;
     padding: 10px;
-    position: fixed;
+    position: relative;
+    /* Changed to relative */
     left: 0;
     bottom: 0;
     width: 100%;
-}
-
-/* Home page styles */
-.home {
-    padding: 20px;
-}
-
-.carousel {
-    margin-bottom: 20px;
-}
-
-.vision-mission,
-.why-sourcing,
-.submit-product,
-.sections {
-    margin-bottom: 20px;
-}
-
-.submit-product h2 {
-    margin-bottom: 10px;
-}
-
-.submit-product button a {
-    text-decoration: none;
-    color: white;
-}
-
-.section {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-}
-
-.section img {
-    width: 200px;
-    height: auto;
-    margin-right: 20px;
-}
-
-.section h3 {
-    margin-bottom: 10px;
 }
